@@ -36,7 +36,6 @@ jobs:
             --parameters commands='[
               "cd /opt/svs",
               "git pull origin main",
-              "sudo mkdir -p /var/www/svs",
-              "sudo cp web/index.html /var/www/svs/index.html",
+              "sudo cp web/index.html /var/www/html/index.html",
               "sudo systemctl reload nginx"
             ]'
